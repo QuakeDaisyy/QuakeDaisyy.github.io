@@ -2,19 +2,55 @@
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
-    <title>Moja nová stránka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Portfólio</title>
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f0f2f5; }
-        .card { background: white; padding: 2rem; border-radius: 15px; shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
-        h1 { color: #333; }
-        p { color: #666; }
+        :root { --primary: #2563eb; --dark: #1e293b; --light: #f8fafc; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; background: var(--light); color: var(--dark); }
+        header { background: white; padding: 2rem; text-align: center; border-bottom: 3px solid var(--primary); }
+        .container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+        .card { background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 1.5rem; }
+        .tag { background: var(--primary); color: white; padding: 0.2rem 0.6rem; border-radius: 5px; font-size: 0.8rem; }
+        h2 { color: var(--primary); }
+        .footer { text-align: center; font-size: 0.8rem; color: #64748b; margin-top: 3rem; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Ahoj! 🚀</h1>
-        <p>Práve pracujem na svojej novej stránke cez GitHub Student Pack.</p>
-        <p>Moja doména už čoskoro ožije!</p>
-    </div>
+
+<header>
+    <h1>[Tvoje Meno]</h1>
+    <p>Študentka & Kreatívna duša</p>
+</header>
+
+<div class="container">
+    <section class="card">
+        <h2>O mne</h2>
+        <p>Ahoj! Som študentka a toto je môj priestor, kde dokumentujem svoje projekty a cestu za novými zručnosťami. Zaujímam sa o technológie, dizajn a tvorbu vecí od nuly.</p>
+    </section>
+
+    <section class="card">
+        <h2>Moje projekty</h2>
+        <div>
+            <strong>🌐 Osobný Web</strong> <span class="tag">Web Design</span>
+            <p>Môj prvý úspešný technický projekt: Spustenie vlastnej domény a webu cez GitHub Student Pack.</p>
+        </div>
+        <hr>
+        <div>
+            <strong>🎨 Kreatívna tvorba</strong> <span class="tag">Hobby</span>
+            <p>Tu čoskoro pribudnú moje práce z oblasti [šitia / maliarstva / elektrotechniky].</p>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Kontakt</h2>
+        <p>Ak ťa moja tvorba zaujala, nájdeš ma tu:</p>
+        <p>📧 Email: [tvoj@email.com]</p>
+    </section>
+</div>
+
+<div class="footer">
+    <p>&copy; 2026 | Vyrobené s pomocou GitHub Student Pack</p>
+</div>
+
 </body>
 </html>
